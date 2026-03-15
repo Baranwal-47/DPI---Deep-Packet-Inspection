@@ -1,0 +1,64 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Editor / IDE ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.code-workspace
+
+# --- Logs ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Env / secrets ---
+.env
+.env.*
+*.local
+*.secret
+*.secrets
+*.key
+*.pem
+*.pfx
+
+# --- Archives ---
+*.7z
+*.zip
+*.tar
+*.gz
+*.rar
+
+# --- Build / cache (generic) ---
+dist/
+build/
+out/
+target/
+release/
+debug/
+tmp/
+temp/
+.cache/
+coverage/
+*.cache
+
+# --- .NET / C# ---
+bin/
+obj/
+.vs/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+!.gitkeep
