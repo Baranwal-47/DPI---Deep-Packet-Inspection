@@ -18,7 +18,7 @@ No libpcap. No Boost. No external dependencies — every byte of the PCAP format
 
 Feed it a Wireshark capture and it identifies **which applications the traffic belongs to** — YouTube, Netflix, Discord, TikTok, and 15+ others — *even though the traffic is encrypted with HTTPS*. It can then drop packets by app, domain, or source IP, and write the filtered traffic back out as a valid PCAP.
 
-![Demo run](assets/demo.svg)
+![Demo run](assets/demo.gif)
 
 The trick: when a browser starts a TLS connection, the very first packet (the **Client Hello**) carries the destination hostname in plaintext — the **SNI** (Server Name Indication) field. The engine walks the raw TLS handshake bytes, pulls out `www.youtube.com`, and classifies the whole connection from that single packet. This is the same technique real ISPs and enterprise firewalls use.
 
